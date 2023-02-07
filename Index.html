@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      padding: 100px 0;
+    }
+    .container {
+      background-color: rgba(128, 128, 128, 0.311);
+      width: 60%;
+      box-shadow: 2px 2px 15px grey;
+      margin: auto;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: blue;
+    }
+    input {
+      width: 100px;
+    }
+    .input {
+      text-align: center;
+    }
+    .header {
+      text-align: center;
+      box-shadow: 2px 2px 15px grey;
+      width: 60%;
+      margin: auto;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    @media all and (max-width: 330px) {
+      h1 {
+        font-size: larger;
+      }
+    }
+
+    #result-div {
+      width: 30%;
+      background-color: #fff;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      text-align: center;
+      margin: auto;
+      box-shadow: 5px 5px 15px grey;
+    }
+
+    input::placeholder {
+        color: blue;
+    }
+    label {
+        color: blue;
+    }
+  </style>
+  <body id="body">
+    <div class="header">
+      <h1>Age calculator</h1>
+    </div>
+    <div class="container">
+      <div
+        style="display: flex; column-gap: 10px; justify-content: center; flex-wrap: wrap">
+        <div class="input">
+          <label for="">Year</label><br />
+          <input type="text" name="" id="year" placeholder="yyyy" />
+        </div>
+        <div>
+          <label for="">Month</label><br/>
+          <input type="text" name="" id="month" placeholder="mm"/>
+        </div>
+        <div>
+          <label for="">Day</label><br />
+          <input type="text" name="" id="day" placeholder="dd"/>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 20px">
+        <input
+          type="button"
+          value="Submit"
+          id="submit"
+          style="background-color: blue; border: none; color: #fff; padding: 05px 0; border-radius: 5px;"/>
+      </div>
+    </div>
+    <div id="result-div">
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
